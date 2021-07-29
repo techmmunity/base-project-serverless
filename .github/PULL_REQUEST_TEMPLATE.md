@@ -1,6 +1,6 @@
 ## What this PR introduces?
 
-<!-- Please, includes adescription of this pull request -->
+<!-- Please, includes description of this pull request -->
 
 ## PR Checklist
 
@@ -12,7 +12,7 @@ Please check if your PR fulfills the following requirements:
 - [ ] Swagger Docs for all the possible requests and responses have been added / updated
 - [ ] Mocks fot the database have been added / updated
 - [ ] Lib of the service have been updated
-- [ ] Lib package.json version have been increased and follow semantiic versioning
+- [ ] Lib package.json version have been increased and follow semantic versioning
 
 ## PR Type
 

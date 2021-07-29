@@ -8,9 +8,6 @@
 
 import * as yup from "yup";
 
-export type Yup = typeof yup;
-
-export const invalidParamsErrorMessage = `this must be a \`object\` type, but the final value was: \`null\` (cast from the value \`""\`).
- If "null" is intended as an empty value be sure to mark the schema as \`.nullable()\``;
+// Add custom methods here
 
 export { yup };

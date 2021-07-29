@@ -55,6 +55,8 @@ tsconfig*
 !tsconfig.json
 !tsconfig.build.json
 
-
 # Deploy
 .serverless
+
+# GraphQL
+schema.gql

@@ -1,12 +1,14 @@
 import { Module } from "@nestjs/common";
-import { DynamoModule } from "v1/injectables/dynamo";
+import { TypeOrmModule } from "@nestjs/typeorm";
 
 import { ExampleResolver } from "./example.resolver";
 
 import { ExampleService } from "./example.service";
 
+import { ExampleEntity } from "./example.entity";
+
 @Module({
-	imports: [DynamoModule.forFeature([])],
+	imports: [TypeOrmModule.forFeature([ExampleEntity])],
 	providers: [ExampleService, ExampleResolver],
 })
 export class ExampleModule {}

@@ -4,6 +4,7 @@ declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
 			NODE_ENV: "dev" | "homolog" | "production" | "test";
+			MONGODB_URL: string;
 		}
 	}
 }

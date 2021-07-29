@@ -17,13 +17,16 @@ describe(getDescribe(__filename), () => {
 	});
 
 	it("should return example value with valid params", async () => {
+		const doc = exampleMock.doc({
+			thisIsAnParam: "aaa",
+		});
+
+		exampleMock.repository.save.mockResolvedValueOnce(doc);
+
 		const result = await service.create({
 			thisIsAnParam: "Test",
 		});
 
-		expect(result).toStrictEqual({
-			thisIsAnInjectable: "Just An Example",
-			thisIsAnParam: "Test",
-		});
+		expect(result).toStrictEqual(doc);
 	});
 });

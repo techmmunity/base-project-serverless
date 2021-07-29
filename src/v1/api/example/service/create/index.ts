@@ -2,18 +2,17 @@ import { V1CreateExampleInputSchema } from "./schemas/input.schema";
 
 import { validate } from "./validate";
 
+import { ExampleRepository } from "../../example.entity";
+
 interface Injectables {
-	thisIsAnInjectable: string;
+	exampleRepository: ExampleRepository;
 }
 
 export const create = async (
-	{ thisIsAnInjectable }: Injectables,
+	{ exampleRepository }: Injectables,
 	params: V1CreateExampleInputSchema,
 ) => {
-	const { thisIsAnParam } = await validate(params);
+	const data = await validate(params);
 
-	return {
-		thisIsAnInjectable,
-		thisIsAnParam,
-	};
+	return exampleRepository.save(data);
 };

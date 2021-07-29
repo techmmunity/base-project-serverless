@@ -1,7 +1,7 @@
 import { Field, InputType } from "@nestjs/graphql";
 
 @InputType()
-export class V1CreateExampleInputSchema {
+export class V1FindByIdExampleInputSchema {
 	@Field()
-	public thisIsAnParam: string;
+	public id: string;
 }

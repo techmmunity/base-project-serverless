@@ -64,6 +64,7 @@
 		"redux": "redux-actions",
 		"modules": "generator",
 		"entities": "class",
+		"entity": "class",
 		"migrations": "database"
 	},
 	"material-icon-theme.files.associations": {
@@ -102,6 +103,10 @@
 		"dotenv",
 		"conta",
 		"fastify",
-		"injectables"
+		"injectables",
+		"jwks",
+		"webfactory",
+		"typeorm",
+		"MONGODB"
 	]
 }

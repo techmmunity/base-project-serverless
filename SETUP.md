@@ -1,8 +1,8 @@
 # Setup Project Details
 
-## New Dev Project Config
+----
 
-### Environment config
+## New Dev Environment Config
 
 - [Install yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable)
 - [Install VSCode](https://code.visualstudio.com/Download)
@@ -11,7 +11,9 @@
 - **If the changes are not applied automatically** add the content of `.vscode/settings.json` in your personal settings.json
   - The "Material Icon Theme" settings aren't automatically configured, so you need to set they manually
 
-## New PROJECT Config
+----
+
+## New Project Config
 
 ### Initial config
 
