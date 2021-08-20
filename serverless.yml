@@ -2,6 +2,7 @@ service: base-project-serverless
 
 useDotenv: true
 configValidationMode: error
+variablesResolutionMode: 20210326
 
 plugins:
   - serverless-offline
@@ -14,11 +15,22 @@ provider:
   environment:
     LAMBDA: true
     NODE_ENV: ${env:NODE_ENV}
-    MONGODB_URL: ${env:MONGODB_URL}
+    MONGODB_URL: ${ssm:MONGODB_URL}
+  apiGateway:
+    usagePlan:
+      quota:
+        limit: 1000
+        offset: 2
+        period: MONTH
+      throttle:
+        burstLimit: 5
+        rateLimit: 5
 
 package:
   excludeDevDependencies: true
   patterns:
+    - "!**/**"
+    - .env
     - dist/index.js
     - serverless.yml
     - package.json
@@ -27,12 +39,13 @@ package:
 functions:
   index:
     handler: dist/index.handler
+    provisionedConcurrency: 1
     events:
       - http:
           cors: true
           path: "/"
-          method: any
+          method: post
       - http:
           cors: true
           path: "{proxy+}"
-          method: any
+          method: post
