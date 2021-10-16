@@ -61,7 +61,7 @@ tsconfig*
 schema.gql
 
 # Serverless
-serverless.ts
+/serverless.ts
 serverless.d.ts
 serverless.js
 serverless.js.map

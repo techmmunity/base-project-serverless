@@ -2,9 +2,9 @@ import { Module } from "@nestjs/common";
 
 import { API } from "./api";
 
-import { MONGO_DB_CONNECT } from "./config/mongodb";
+import { DYNAMO_CONNECT } from "./config/dynamodb";
 
 @Module({
-	imports: [MONGO_DB_CONNECT, ...API],
+	imports: [DYNAMO_CONNECT, ...API],
 })
 export class V1Module {}

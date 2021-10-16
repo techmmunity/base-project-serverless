@@ -1,6 +1,6 @@
 import { Test, TestingModule } from "@nestjs/testing";
-import { getRepositoryToken } from "@nestjs/typeorm";
 
+import { getRepositoryToken } from "@techmmunity/symbiosis-nestjs";
 import { MockRepository } from "../repository";
 import { ExampleService } from "v1/api/example/example.service";
 

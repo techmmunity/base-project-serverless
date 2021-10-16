@@ -1,3 +1,4 @@
+import { v4 } from "uuid";
 import { V1CreateExampleInputSchema } from "./schemas/input.schema";
 
 import { validate } from "./validate";
@@ -14,5 +15,8 @@ export const create = async (
 ) => {
 	const data = await validate(params);
 
-	return exampleRepository.save(data);
+	return exampleRepository.save({
+		id: v4(),
+		...data,
+	});
 };

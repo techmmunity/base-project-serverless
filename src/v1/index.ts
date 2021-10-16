@@ -1,19 +1,19 @@
 import { getHandlerPath } from "../helpers/get-handler-path";
 
 export const v1 = {
-	handler: `${getHandlerPath(__dirname)}/handler.main`,
+	handler: `${getHandlerPath(__dirname)}/handler.handler`,
 	events: [
 		{
 			http: {
 				cors: true,
-				method: "post",
+				method: "any",
 				path: "/",
 			},
 		},
 		{
 			http: {
 				cors: true,
-				method: "post",
+				method: "any",
 				path: "{proxy+}",
 			},
 		},

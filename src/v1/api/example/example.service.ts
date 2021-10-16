@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
-import { InjectRepository } from "@nestjs/typeorm";
 
+import { InjectRepository } from "@techmmunity/symbiosis-nestjs";
 import { create } from "./service/create";
 import { V1CreateExampleInputSchema } from "./service/create/schemas/input.schema";
 

@@ -1,18 +1,14 @@
 import {
-	BaseEntity,
 	Column,
 	Entity,
+	PrimaryColumn,
 	Repository,
-	ObjectIdColumn,
-	ObjectID,
-} from "typeorm";
+} from "@techmmunity/symbiosis";
 
-@Entity("example")
-export class ExampleEntity extends BaseEntity {
-	@ObjectIdColumn({
-		name: "_id",
-	})
-	public id: ObjectID;
+@Entity()
+export class ExampleEntity {
+	@PrimaryColumn()
+	public id: string;
 
 	@Column()
 	public thisIsAnParam: string;

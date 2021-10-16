@@ -4,7 +4,8 @@ declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
 			NODE_ENV: "dev" | "homolog" | "production" | "test";
-			MONGODB_URL: string;
+			DYNAMODB_ACCESS_KEY_ID: string;
+			DYNAMODB_SECRET_ACCESS_KEY: string;
 		}
 	}
 }

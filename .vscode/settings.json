@@ -40,6 +40,21 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"javascript.suggest.autoImports": true,
 
+	// ======================= Formatters ===========================
+
+	"[javascript]": {
+		"editor.defaultFormatter": null
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": null
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": null
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": null
+	},
+
 	// =========== Plugins & Extensions General Config ===============
 
 	// GitLens
@@ -92,20 +107,21 @@
 
 	// Spell Checker
 	"cSpell.words": [
-		"techmmunity",
-		"nestjs",
-		"vercel",
-		"sonarjs",
-		"tsbuildinfo",
-		"prebuild",
-		"nodemodules",
-		"dotenv",
 		"conta",
+		"dotenv",
 		"fastify",
 		"injectables",
 		"jwks",
-		"webfactory",
+		"MONGODB",
+		"nestjs",
+		"nodemodules",
+		"prebuild",
+		"sonarjs",
+		"techmmunity",
+		"tsbuildinfo",
 		"typeorm",
-		"MONGODB"
+		"vendia",
+		"vercel",
+		"webfactory"
 	]
 }

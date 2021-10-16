@@ -5,8 +5,9 @@ import { v1 } from "./src/v1";
 import type { AWS } from "@serverless/typescript";
 
 const serverlessConfiguration: AWS = {
-	service: "course-service",
+	service: "base-project-serverless",
 	frameworkVersion: "2",
+	useDotenv: true,
 	package: {
 		individually: true,
 	},
@@ -15,6 +16,7 @@ const serverlessConfiguration: AWS = {
 			webpackConfig: "./webpack.config.js",
 			includeModules: true,
 		},
+		optimize: ["swagger-ui-dist"]
 	},
 	plugins: ["serverless-webpack", "serverless-offline"],
 	provider: {
