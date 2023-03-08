@@ -7,7 +7,7 @@
 	"license": "Apache-2.0",
 	"dependencies": {
 		"@nestjs/common": "^8.0.0",
-		"@nestjs/core": "^8.0.0",
+		"@nestjs/core": "^9.0.5",
 		"@nestjs/platform-express": "^8.1.1",
 		"@techmmunity/symbiosis": "^0.0.7",
 		"@techmmunity/symbiosis-dynamodb": "^0.0.2",
